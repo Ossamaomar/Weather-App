@@ -1,0 +1,321 @@
+body
+{
+    background-color: rgb(13, 18, 28);
+    padding: 20px;
+}
+
+:root
+{
+    --main-bg-color: rgb(32, 43, 59);
+    --main-gray-text-color: #9399a2;
+    --main-white-color: #F0F1F1;
+}
+
+.navbar
+{
+    background-color: var(--main-bg-color);
+    margin-bottom: 15px;
+
+}
+
+.navbar .navbar-toggler
+{
+    border-color: black;
+}
+
+.navbar .navbar-toggler i
+{
+    color: rgb(0, 185, 241) !important;
+}
+
+.nav-link
+{
+    color: white;
+    transition: 0.4s all;
+}
+
+.nav-link:hover
+{
+    color: rgb(0, 185, 241);
+}
+
+.active
+{
+    color: rgb(0, 185, 241) !important;
+}
+
+.navbar-brand img
+{
+    width: 50px;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.search-container input
+{
+    background-color: var(--main-bg-color);
+    color: white;
+    border: 0;
+}
+
+.search-container input:focus
+{
+    background-color: var(--main-bg-color);
+    border-color: rgb(0, 185, 241);
+    box-shadow: 0 0 0 .25rem rgba(0, 185, 241, 0.529);
+}
+
+
+.form-floating>.form-control~label::after
+{
+    background-color: transparent !important;
+    color: white;
+}
+
+
+.search-container label
+{
+    color: white;
+}
+
+.state-img img
+{
+    width: 100px;
+}
+
+
+
+.city-degree-and-state .city-name, .city-degree-and-state .city-degree
+{
+    color: var(--main-white-color);
+}
+
+.city-degree-and-state .city-chance-of-rain
+{
+    color: var(--main-gray-text-color);
+}
+
+.city-degree-and-state .city-state-caption
+{
+    color: var(--main-white-color);
+}
+
+.city-degree-and-state .city-rain
+{
+    color: var(--main-gray-text-color);
+}
+
+.today-forecast-container
+{
+    background-color: var(--main-bg-color);
+    
+}
+
+.today-forecast-container .time-header, .today-forecast-container h4
+{
+    color: var(--main-gray-text-color);
+}
+
+.today-forecast-container .temp-span
+{
+    color: var(--main-white-color);
+}
+
+.today-forecast-container .hourly-forecast-img-state
+{
+    width: 50px;
+}
+
+
+.air-conditions-container
+{
+    background-color: var(--main-bg-color);
+}
+
+.air-conditions-container h4, .air-conditions-container h6
+{
+    color: var(--main-gray-text-color);
+}
+
+.air-conditions-container span
+{
+    color: var(--main-white-color);
+}
+
+.air-conditions-container i
+{
+    width: 20px;
+    color: rgb(0, 185, 241);
+}
+
+.air-conditions-container .air-condition
+{
+    padding-left: 25px;
+}
+
+
+/* ///////////////////////////// WEEK FORECAST START ///////////////////////////// */
+
+.week-forecast-container
+{
+    background-color: var(--main-bg-color);
+}
+
+.week-forecast-container .header
+{
+    color: var(--main-gray-text-color);
+}
+
+.week-forecast-container .week-day
+{
+    color: var(--main-gray-text-color);
+    width: 50px;
+}
+
+.week-forecast-container .day-state img
+{
+    width: 50px;
+}
+
+.week-forecast-container .max-min-temp .max-temp
+{
+    color: var(--main-white-color);
+}
+
+.week-forecast-container .day-state
+{
+    color: var(--main-white-color);
+}
+
+.week-forecast-container .max-min-temp .min-temp
+{
+    color: var(--main-gray-text-color);
+}
+
+.horizontal-line
+{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 185, 241, 0.526);
+}
+
+.vertical-line
+{
+    max-width: 1px;
+    height: 100px;
+    background-color: rgba(0, 185, 241, 0.526);
+    flex-grow: 1;
+}
+
+.today-forecast-container,.air-conditions-container,
+.week-forecast-container
+{
+    margin-bottom: 20px !important;
+}
+
+
+
+/* ///////////////////////////// WEEK FORECAST END ///////////////////////////// */
+
+
+
+@media screen and (min-width: 992px) {
+    
+    .main-container
+    {
+        height: 94vh;
+    }
+    .navbar
+    {
+        height: 100%; 
+        width: 80px; 
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column; 
+        padding: 20px 0;
+    }
+
+    .main-container
+    {
+        flex-direction: row;
+    }
+
+    .city-weather-container
+    {
+        width: 60%;
+        padding: 0 15px;
+        height: 94vh;
+        overflow: hidden;
+    }
+
+    .week-forecast-container
+    {
+        width: 40%;
+    }
+
+    .navbar .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-link
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5px 0;
+
+    }
+
+    .city-weather-container 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .navbar-brand
+    {
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+
+    .navbar .container .navbar-nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand img
+    {
+        margin: 0 auto;
+    }
+
+    .air-conditions-container,
+    .week-forecast-container
+    {
+        margin-bottom: 0px !important;
+    }
+
+    .week-forecast-container
+    {
+        /* padding-bottom: 30px !important; */
+    }
+
+    
+}

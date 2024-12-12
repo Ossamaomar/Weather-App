@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--------- Bootstrap ---------->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!--------- Fontawesome ---------->
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!--------- Main CSS ---------->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <nav class="navbar rounded-4 navbar-expand-lg" id="Nav">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#"><img src="../assets/images/logo@2x.png"  alt="">Netlify</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="../index.html">Weather <i class="fa-solid fa-cloud-sun text-center"></i> </a>
+                        <a class="nav-link" href="#">Cities <i class="fa-solid fa-city text-center"></i></a>
+                        <a class="nav-link" href="#">Map <i class="fa-solid fa-map text-center"></i></a>
+                        <a class="nav-link" href="#">Contact Us <i class="fa-solid fa-bars-staggered text-center"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form-section w-100">
+            <div class="directory-container p-4 rounded-4 mb-3">
+                <span class="base">Home / <span class="direct">Contact us</span></span>
+            </div>
+            <div class="location-form-container">
+                <div class="location-container rounded-4">
+                    <iframe class="rounded-4 d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292345.57542882!2d25.581655534855916!3d26.817182426385546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x82a6debff38510e7%3A0x6eebd368ae197079!2sEMA%20weather!5e0!3m2!1sen!2seg!4v1734006111593!5m2!1sen!2seg" width="100%" height="395" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="info-container px-3 py-4">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Name INC. 2803 Avenue Street, Los Angeles</p>
+                        <p><i class="fa-solid fa-phone"></i> +1 800 314 235</p>
+                        <p><i class="fa-solid fa-envelope"></i> contact@companyname.com</p>
+                    </div>
+                </div>
+
+                <div class="form-container pt-3 h-100 d-flex flex-column justify-content-between">
+                    <h5 class="fs-2">Contact Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                    
+                    <div class="form-components">
+                        <div class="name-email-container w-100">
+                            <input class="rounded-4" type="text" placeholder="Your name...">
+                            <input class="rounded-4" type="email" placeholder="Email Address...">
+                        </div>
+
+                        <div class="company-website-container w-100">
+                            <input class="rounded-4" type="text" placeholder="Company name...">
+                            <input class="rounded-4" type="url" placeholder="Website...">
+                        </div>
+
+                        <textarea class="rounded-4 w-100" name="message" placeholder="Message..."></textarea>
+
+                        <div class="sub-btn d-flex justify-content-end pt-2">
+                            <button class="px-3 py-2 rounded-4">Submit</button>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

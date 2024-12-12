@@ -1,0 +1,278 @@
+body
+{
+    background-color: rgb(13, 18, 28);
+    padding: 20px;
+}
+
+
+
+:root
+{
+    --main-bg-color: rgb(32, 43, 59);
+    --main-gray-text-color: #9399a2;
+    --main-white-color: #F0F1F1;
+}
+
+.navbar .navbar-toggler
+{
+    border-color: black;
+}
+
+.navbar .navbar-toggler i
+{
+    color: rgb(0, 185, 241) !important;
+}
+
+.navbar
+{
+    background-color: var(--main-bg-color);
+    margin-bottom: 15px;
+}
+
+.nav-link
+{
+    color: white;
+    transition: 0.4s all;
+}
+
+.nav-link:hover
+{
+    color: rgb(0, 185, 241);
+}
+
+.active
+{
+    color: rgb(0, 185, 241) !important;
+}
+
+.navbar-brand img
+{
+    width: 50px;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.form-floating>.form-control~label::after
+{
+    background-color: transparent !important;
+    color: white;
+}
+
+.base 
+{
+    color: var(--main-white-color);
+}
+
+.direct
+{
+    color: var(--main-gray-text-color);
+}
+
+.directory-container
+{
+    background-color: var(--main-bg-color);
+}
+
+.location-container
+{
+    background-color: var(--main-bg-color);
+}
+
+.location-container p
+{
+    color: var(--main-white-color);
+}
+
+.location-container i
+{
+    color: rgb(0, 185, 241);
+}
+
+.info-container
+{
+    padding: 5px;
+}
+
+.form-container h5
+{
+    color: var(--main-white-color);
+}
+
+.form-container p
+{
+    color: var(--main-gray-text-color);
+}
+
+
+.form-components  input
+{
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-gray-text-color);
+    outline: none;
+}
+
+.form-components input:focus
+{
+    border-color: rgb(0, 185, 241);
+}
+
+
+.form-components  textarea
+{
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-gray-text-color);
+    outline: none;
+    height: 200px;
+}
+
+.form-components textarea:focus
+{
+    border-color: rgb(0, 185, 241);
+}
+
+.form-components button
+{
+    background-color: rgb(0, 185, 241);
+}
+
+.name-email-container input, .company-website-container input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .main-container
+    {
+        height: 94vh;
+    }
+
+    .navbar
+    {
+        height: 100%; 
+        width: 80px; 
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column; 
+        padding: 20px 0;
+    }
+
+    .main-container
+    {
+        flex-direction: row;
+    }
+
+    .navbar .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-link
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5px 0;
+
+    }
+
+
+    .navbar-brand
+    {
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+
+    .navbar .container .navbar-nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand img
+    {
+        margin: 0 auto;
+    }
+
+    .form-section
+    {
+        height: 94vh;
+        margin-left: 20px;
+    }
+
+    .location-container
+    {
+        width: 40%;
+    }
+
+    .form-container
+    {
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .location-form-container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name-email-container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .company-website-container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .name-email-container input
+    {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .company-website-container input
+    {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .form-components textarea
+    {
+        margin-top: 20px;
+    }
+}
